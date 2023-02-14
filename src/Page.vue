@@ -59,6 +59,7 @@ function rit() {
   background-color: var(--theme-dark-b);
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 </style>

@@ -3,10 +3,11 @@ import { ref } from 'vue';
 import Card from '../Card.vue';
 import Tagbox from './tagbox.vue';
 import global from '../../global.vue'
+
 var arts = ref(global.jsonData.lastestArtical);
 var cats = ref(global.jsonData.categoryDefinitions);
 var cai = ref(global.jsonData.categoryIndex);
-
+console.log(import.meta.env);
 function refreshData() {
     arts = ref(global.jsonData.lastestArtical);
     cats = ref(global.jsonData.categoryDefinitions);
@@ -30,15 +31,24 @@ function withTag(t) {
     global.jsonData.lastestArtical = tempart;
     refreshData();
 }
+function buildPath(p) {
+    if (import.meta.env.DEV) {
+        return "/public/" + p;
+
+    } else {
+        return p;
+
+    }
+}
 </script>
 <template>
     <Card>
         <div class=" tagcard-container">
             <Tagbox :backcolor=i.color :desc="i.name" :namekey="i.name" @click="withTag(i.name); $emit('refreshed');"
                 v-for="i in cats">
-                <img style="width: 15px;height:15px;" :src="'src/' + i.icon">
+                <img style="width: 15px;height:15px;" :src="buildPath(i.icon)">
             </Tagbox>
-            
+
         </div>
     </Card>
 </template>

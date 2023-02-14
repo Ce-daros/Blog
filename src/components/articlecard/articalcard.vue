@@ -39,6 +39,12 @@ function switchA(t) {
     else {
         ev.stopPropagation();
     }
+} function buildPath(p) {
+    if (import.meta.env.DEV) {
+        return "/public/" + p;
+    } else {
+        return p;
+    }
 }
 console.log(props.count);
 var l = global.jsonData.lastestArtical[props.count].text.length;
@@ -70,13 +76,13 @@ var readtime = ref(toSpeed(l))
                     <div class="artical-tags">
                         <Tagbox :backcolor="cats[cai.indexOf(i)].color" :desc="i" v-for="i in arts[count].tags">
                             <img style="width: 15px;height:15px;transform: translateY(-1px);"
-                                :src="'src/' + cats[cai.indexOf(i)].icon">
+                                :src="buildPath(cats[cai.indexOf(i)].icon)">
                         </Tagbox>
 
                     </div>
                     <Transition name="artcloseicon">
                         <div class="artical-close-button" v-if=a @click="switchA(true);">
-                            <img class="artical-close-icon" src="../../assets/close.png">
+                            <img class="artical-close-icon" src="/public/close.png">
                         </div>
                     </Transition>
                 </div>

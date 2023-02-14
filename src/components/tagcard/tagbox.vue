@@ -10,7 +10,7 @@ const props = defineProps({
             <slot></slot>
         </div>
         <div class="tagdesc">
-            {{ desc }}{{ a }}
+            {{ desc }}
         </div>
     </div>
 </template>
