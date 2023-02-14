@@ -24,16 +24,32 @@ import ZhihuLogo from "./small-logos/ZhihuLogo.vue"
 </template>
 
 <style scoped>
-.card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 300px;
-    justify-content: space-around;
-    min-width: 200px;
-    max-width: 300px;
-    width: 100%;
+@media screen and (orientation:landscape) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+        justify-content: space-around;
+        min-width: 200px;
+        max-width: 300px;
+        width: 100%;
 
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+        justify-content: space-around;
+        min-width: 200px;
+        max-width: 250px;
+        width: 100%;
+
+    }
 }
 
 .small-icons {

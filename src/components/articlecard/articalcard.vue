@@ -134,7 +134,7 @@ var readtime = ref(toSpeed(l))
     width: 20px;
     height: 20px;
     margin-left: -20px;
-    transform: translateY(-2px) translateX(20px);
+    transform: translateY(30px);
 }
 
 .arttxt {
@@ -169,11 +169,92 @@ var readtime = ref(toSpeed(l))
     margin-bottom: 5px;
 }
 
-.artical-tags {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row-reverse;
-    padding-right: 10px;
+
+@media screen and (orientation:landscape) {
+    .artical-tags {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .artical-tags {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .artical-con {
+        padding: 15px;
+        padding-top: 0px;
+        padding-left: 40px;
+        padding-right: 40px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .artical-meta-con {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 55%;
+
+    }
+
+    .artical-meta-timetoread {
+        display: flex;
+        align-items: center;
+    }
+
+    .artical-meta-length {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .artical-meta-wrotentime {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .artical-con {
+        padding: 5px;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .artical-meta-con {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 75%;
+
+    }
+
+    .artical-meta-timetoread {
+        display: flex;
+        align-items: center;
+    }
+
+    .artical-meta-length {
+        display: flex;
+        align-items: center;
+        margin-right: 7px;
+    }
+
+    .artical-meta-wrotentime {
+        display: flex;
+        align-items: center;
+        margin-right: 7px;
+    }
 }
 
 .artical-txt {
@@ -181,13 +262,7 @@ var readtime = ref(toSpeed(l))
     margin-top: 30px;
 }
 
-.artical-meta-con {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 55%;
 
-}
 
 .art-icons {
     margin-right: 4px;
@@ -200,23 +275,5 @@ var readtime = ref(toSpeed(l))
         华文细黑,
         STXihei,
         sans-serif;
-}
-
-
-.artical-meta-timetoread {
-    display: flex;
-    align-items: center;
-}
-
-.artical-meta-length {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.artical-meta-wrotentime {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
 }
 </style>

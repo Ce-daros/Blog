@@ -23,7 +23,7 @@ const count = ref(0)
 
 <style scoped>
 .nav-bar {
-  display: flex;
+  display: none;
   flex-direction: row;
   opacity: 90%;
   height: 5vh;
@@ -39,7 +39,7 @@ const count = ref(0)
 }
 
 .nav-links {
-  display: flex;
+  display: none;
   flex-grow: 1;
   height: 100%;
   align-items: center;

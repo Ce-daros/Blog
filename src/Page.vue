@@ -29,37 +29,74 @@ function rit() {
 </template>
 
 <style scoped>
-.first_screen {
-  height: 95vh;
+@media screen and (orientation:landscape) {
+  .first_screen {
+    height: 95vh;
+  }
+
+  .left-bar {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    align-items: center;
+    max-width: 300px;
+    min-width: 200px;
+    margin-right: 10px;
+  }
+
+  .right-bar {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-left: 10px;
+  }
+
+  .second_screen {
+    padding-left: 100px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 100px;
+    height: 90vh;
+    background-color: var(--theme-dark-b);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
 }
 
-.left-bar {
-  display: flex;
-  flex-direction: column;
-  width: 26%;
-  align-items: center;
-  max-width: 300px;
-  min-width: 200px;
-  margin-right: 10px;
-}
+@media screen and (orientation:portrait) {
+  .first_screen {
+    height: 95vh;
+  }
 
-.right-bar {
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  margin-left: 10px;
-}
+  .left-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    max-width: 400px;
+    min-width: 200px;
+  }
 
-.second_screen {
-  padding-left: 100px;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  padding-right: 100px;
-  height: 90vh;
-  background-color: var(--theme-dark-b);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  .right-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .second_screen {
+    padding-left: 20px;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    padding-right: 20px;
+    height: 90vh;
+    background-color: var(--theme-dark-b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

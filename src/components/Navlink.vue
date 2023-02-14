@@ -23,7 +23,7 @@ function Navit() {
 
 <style scoped>
 .navlink-box {
-    display: flex;
+    display: none;
     flex-direction: row;
 }
 </style>
