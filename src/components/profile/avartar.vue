@@ -1,5 +1,5 @@
 <template>
-    <img src="https://avatars.githubusercontent.com/u/64960661?s=400&u=4a7ade1e5fda6fef210e57dc4d1ef0bef00b589f&v=4">
+    <img src="https://i.328888.xyz/2023/02/14/mAALZ.jpeg">
 </template>
 
 <style scoped>

@@ -16,7 +16,7 @@ import ZhihuLogo from "./small-logos/ZhihuLogo.vue"
             <GithubLogo linkto="https://github.com/Ce-daros"></GithubLogo>
             <TwitterLogo linkto="https://twitter.com/Ce_daros"></TwitterLogo>
             <BilibiliLogo linkto="https://space.bilibili.com/3493090178369961"></BilibiliLogo>
-            <ZhihuLogo linkto="https://space.bilibili.com/3493090178369961"></ZhihuLogo>
+            <ZhihuLogo linkto="https://www.zhihu.com/people/51-5-46-78"></ZhihuLogo>
         </div>
 
     </Card>
