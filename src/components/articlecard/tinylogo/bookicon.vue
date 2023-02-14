@@ -1,0 +1,10 @@
+<template>
+    <img class="art-icons"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCklEQVR4nO3YO2gUURjF8U0gKWyCpFQkoI2Vr8ZHo40WPiptFGwttbHzQQpNo4WFGktru5QaCGwUURtNJ2pjoqiFELCJgj8Z+ASd7Kwzu1l2Nt4/DOzs7D3nfPe7w15uo5FIJBIDDZ7gB75iEa8xh/uYxFnsxGgPvEexKzwmw3MuMixGpizbfBmxsnzHS9zBaWzqIPhmnAmNV6FZiiqFbImZP4RTuIh7mMXnAv2ssGvYi+EW2sPYh+sRvBWfwmM6PE9Ghh2RqVohJWfzRAR/jJVcoC+4iwNxTcd3f7ISYzON42W6Wpgv3onqrVutswHHIvBSm1WxFL85mo3pwKcV84XvRFWDnNkQ9sQSehNXNuu7s2ddardkVavy93VDUd5USJ+QOlIz9KsjeIan66GQnur5fV/4oEfGa60nFVKRbPuA5sB3ZK2RCqkZUkdqhtSRmiF1pGbo4xYl7X5bkTaN3bKetvHzaffbgv/3fwTvsZAtC8zgFs7HYfPWbo8+2xy1bovD8QvhORMZFiJT6UKyNV2G5TC4EcbjHQQfj7E3Q2u5pHfzn4XEwxFsxAS24wjOYQoP8A4/c+LZ/XNciQPsoTaH21fxokDjbXhMhefhyDARmUZymsWFlJzNMRzEZTzCt1yoD7iN/XFlnz/mfpONeYhLoTXWQY6/Cxl0GhXeiTrTrNrJRCKRaPSVXzqFQ577chmoAAAAAElFTkSuQmCC">
+</template>
+<style scoped>
+img {
+    width: 20px;
+    height: 20px;
+}
+</style>
