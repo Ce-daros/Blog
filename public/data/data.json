@@ -1,10 +1,10 @@
 {
     "lastestArtical": [
         {
-            "title": "Hello World!",
+            "title": "Hello, World!",
             "count": 0,
-            "desc": "Hello World!",
-            "text": "Hello World!",
+            "desc": "你们好！( 仓促的介绍 ）",
+            "text": "也许算是博客吧…？<br><br>其实关于博客的愿望已经持续了很久（ 但是一年前才开始尝试 ）一开始考虑用诸如 Jekyll 的静态网页构建工具，但因为主题自定义程度不高而放弃。<br><br>网站框架使用的是 Vue 与 Vite，数据存放在 JSON 文件里。目前是纯静态页面，实现访客统计或留言功能时会采用 PythonAnywhere 来托管 Flask 后端。<br><br>这个页面（ 看到的这个 ）用了接近十小时编写……（ 水平太差而且面向谷歌编程awa 所以肯定需要更新的。关于内容，会发一些自己遇到的问题以及解决方案（ 可能显而易见 ）以及实践的过程，也许加上生活记录呢。<br><br>（ 这个编辑方式好难用<br><br>……想不到该说什么了<br><br>暂时再见啦<br><br><br><br><br><br>话说今天是情人节呢<br><br><br><br><pre><code>console.log('Hello, World!');</code></pre>",
             "time": "2023-02-14",
             "tags": ["Vue"]
         }
@@ -13,7 +13,7 @@
         {
             "name": "CSS",
             "color": "#1376B7",
-            "icon": "categoryIconsimport.meta.env.BASE_URLCSS.png"
+            "icon": "/categoryIcons/CSS.png"
         },
         {
             "name": "HTML",

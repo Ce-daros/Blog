@@ -130,11 +130,22 @@ var readtime = ref(toSpeed(l))
     margin-bottom: 10px;
 }
 
-.artical-close-icon {
-    width: 20px;
-    height: 20px;
-    margin-left: -20px;
-    transform: translateY(30px);
+
+@media screen and (orientation:landscape) {
+    .artical-close-icon {
+        width: 20px;
+        height: 20px;
+        transform: translateX(15px);
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .artical-close-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: -20px;
+        transform: translateY(30px);
+    }
 }
 
 .arttxt {
@@ -258,7 +269,7 @@ var readtime = ref(toSpeed(l))
 }
 
 .artical-txt {
-    font-size: xx-small;
+    font-size: small;
     margin-top: 30px;
 }
 

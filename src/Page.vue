@@ -1,9 +1,9 @@
 <script setup>
-import NavbarTop from './components/NavbarTop.vue';
 import Profile from "./components/profile/profile.vue";
 import Tagcard from './components/tagcard/tagcard.vue';
 import Articalcard from './components/articlecard/articalcard.vue';
 import global from './global.vue';
+import navcard from "./components/Navcard/navcard.vue";
 import searchBox from './components/searchBox/searchBox.vue';
 import { ref } from 'vue';
 var arts = ref(global.jsonData.lastestArtical);
@@ -21,6 +21,8 @@ function rit() {
       <Tagcard @refreshed="rit(); $forceUpdate();"></Tagcard>
     </div>
     <div class="right-bar">
+      <navcard></navcard>
+      <div class="subtitle">Recent Posts</div>
       <Articalcard :readtime=i.timeToRead :wrotenTime=i.time :artlen=i.len :arttitle=i.title :artdesc=i.desc
         :count=i.count :wrotentime=i.time :arttxt=i.text v-for="i in global.jsonData.lastestArtical"></Articalcard>
 
@@ -29,6 +31,13 @@ function rit() {
 </template>
 
 <style scoped>
+.subtitle {
+  font-size: x-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media screen and (orientation:landscape) {
   .first_screen {
     height: 95vh;

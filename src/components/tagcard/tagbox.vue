@@ -46,6 +46,6 @@ const props = defineProps({
 
 .tagdesc {
     margin-left: 2px;
-    font-size: 1px;
+    font-size: 7px;
 }
 </style>
