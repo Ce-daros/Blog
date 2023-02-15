@@ -7,10 +7,10 @@ var xhr = new XMLHttpRequest;
 
 var c = document.cookie;
 if (c.includes("you_have_reach_there")) {
-    xhr.open("GET", "http://cedaros.pythonanywhere.com/get_visitor", false)
+    xhr.open("GET", "https://cedaros.pythonanywhere.com/get_visitor", false)
 }
 else {
-    xhr.open("GET", "http://cedaros.pythonanywhere.com/set_visitor", false)
+    xhr.open("GET", "https://cedaros.pythonanywhere.com/set_visitor", false)
     document.cookie = "visitorTag=you_have_reach_there; expires=Thu, 4 June 2023 12:00:00 GMT"
 }
 
