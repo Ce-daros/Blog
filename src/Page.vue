@@ -5,6 +5,7 @@ import Articalcard from './components/articlecard/articalcard.vue';
 import global from './global.vue';
 import navcard from "./components/Navcard/navcard.vue";
 import searchBox from './components/searchBox/searchBox.vue';
+import postStat from "./components/profile/postStat.vue";
 import { ref } from 'vue';
 var arts = ref(global.jsonData.lastestArtical);
 function rit() {
@@ -19,6 +20,7 @@ function rit() {
       <Profile></Profile>
       <searchBox @refreshed="rit(); $forceUpdate();"></searchBox>
       <Tagcard @refreshed="rit(); $forceUpdate();"></Tagcard>
+      <postStat></postStat>
     </div>
     <div class="right-bar">
       <navcard></navcard>
